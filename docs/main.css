@@ -1,0 +1,109 @@
+/* Dark mode */
+:root{
+    --highlight:#fff;
+    --dark:#333;
+    --medDark:#444;
+    --med:#555;
+    --medLight: #666;
+    --light:#777;
+    --highlight1:#111;
+}
+/* Light mode */
+/* :root{
+    --highlight:rgb(0, 0, 0);
+    --dark:#eaeaea;
+    --medDark:#fff;
+    --med:#cfcfcf;
+    --medLight: #d1d1d1;
+    --light:#b3b3b3;
+    --highlight1:#12A5B1;
+    --highlight2:#203960;
+} */
+
+body{
+    font-family: 'Fira sans', sans-serif;
+}
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; color:var(--highlight);}
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+#window{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    display:grid;
+    grid-template-areas: "header" "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 8% auto;
+    gap: 20px;
+    background-color: var(--medDark);
+    overflow-x:hidden;
+}
+#header{
+    background-color: var(--dark);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+}
+#title{
+    /* width: 100%; */
+    padding: 20px;
+    font-weight: 700;
+    font-size: 2em;
+    width: fit-content;
+    /* position:absolute; */
+    text-align: center;
+}
+#modeToggle{
+    background-color: var(--med);
+    border-radius: 5px;
+    width: 33px;
+    height: 33px;
+    padding: 5px;
+    margin: 22px 0px;
+}
+.headerButton{
+    background-color: var(--med);
+    border-radius: 5px;
+    height: 28px;
+    padding: 5px 5px 0 5px;
+    margin: 22px 10px;
+}
+#placeholder{
+    flex-grow: 1;
+}
+
+#content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+}
+.project{
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--med);
+    padding: 10px;
+}
+.projectTitle{
+    font-weight: 700;
+    font-size: 1.5em;
+    color:var(--highlight)
+}
+.projectBody{
+    color:var(--highlight1);
+    font-weight: 550;
+    margin:5px 0;
+    padding: 5px;
+    background-color: var(--medLight);
+    border-radius: 5px;
+}
