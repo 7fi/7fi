@@ -12,26 +12,80 @@
     <link href='https://css.gg/dice-5.css' rel='stylesheet'>
     <title>7dev Portfolio</title>
 </head>
-<body>
+<body onload="load()">
     <div id="window">
         <div id="header">
             <a id="title" href="/index.html">Carter Anderson</a>
-            <div id="placeholder"></div>
+            <div class="placeholder"></div>
             <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
             <a href="/portfolio/" class="headerButton">Portfolio</a>
+            <a href="/about/" class="headerButton">About</a>
         </div>
         <div id="content">
             <div class="project">
-                <div class="projectTitle">LED Strip</div>
-                <div class="projectBody">A project to control led light strips</div>
+                    <div class="projectHeader">
+                    <div class="projectTitle">LED Strip</div>
+                    <div class="projectType">Hobby / Robotics</div>
+                </div>
+                <div class="projectBody">A project to control led light strips. Works via web connection as well as a version with an IR remote control.</div>
+            </div>
+            <div class="project" style="background-image: url('/images/Jailbird1.png');">
+                <div class="projectHeader">
+                    <div class="projectTitle">Jailbird</div>
+                    <a class="projectType" href="https://krunker.io/?play=Jailbird">Game</a>
+                </div>
+                <div class="projectBody">
+                    <p>A project for a $50,000 Game Development competition. Set in a dystopian future, you must escape the prison via car, mech and boat to the countryside. Made with the Krunker Editor and runs on browser.</p>
+                    <p>Placed 7th.</p>
+                </div>
+            </div>
+            <div class="project" style="background-image: url('/images/Factory1.png');">
+                    <div class="projectHeader">
+                    <div class="projectTitle">Factory</div>
+                    <div class="projectType">Game Environment</div>
+                </div>
+                <div class="projectBody">A commisioned project for an unreleased online game. Set in a factory, this project was a great way to gain experience with working on a team, as well as doing commisioned work. </div>
+            </div>
+            <div class="project" style="background-image: url('/images/Ravine1.png');">
+                <div class="projectHeader">
+                    <div class="projectTitle">Ravine</div>
+                    <div class="projectType">Game Environment</div>
+                </div>
+                <div class="projectBody">
+                    <p>A commisioned project for an unreleased online game. Set in an old mining town in the far reaches of alaska, this map has well balanced gameplay and a high level of detail. A collaboration with fellow artist Octodoodle, it features many unique areas including a mineshaft, sawmill, sleeping quarters, and many buildings throughout the town. The project is well optimized, and required many skills to create such as terrain creation, modelling, texturing, and general knowledge of level design and environment art.</p>
+                </div>
             </div>
             <div class="project">
-                <div class="projectTitle">Game Dev</div>
-                <div class="projectBody">A project for a game dev competition</div>
+                <div class="projectHeader">
+                    <div class="projectTitle">Deep</div>
+                    <div class="projectType">Game Environment</div>
+                </div>
+                <div class="projectBody">A commisioned project for an online game.</div>
+            </div>
+            <div class="project" style="background-image: url('/images/Spacesim1.png'); background-position:top;">
+                <div class="projectHeader">
+                    <div class="projectTitle">Space Sim (Unfinished)</div>
+                    <div class="projectType">Game</div>
+                </div>
+                <div class="projectBody">
+                    <p>A project for an online game.</p>
+                    <p>A project for an online game.</p>
+                    <p>A project for an online game.</p>
+                </div>
             </div>
             <div class="project">
-                <div class="projectTitle">Tasks</div>
+                <div class="projectHeader">
+                    <div class="projectTitle">Tasks</div>
+                    <div class="projectType">Hobby / Robotics</div>
+                </div>
                 <div class="projectBody">A project to organize tasks for robotics team</div>
+            </div>
+            <div class="project"style="background-image: url('/images/Boids1.png');">
+                <div class="projectHeader">
+                    <div class="projectTitle">Flocking Simulation</div>
+                    <div class="projectType">School</div>
+                </div>
+                <div class="projectBody">A school project that simulates the basic flocking behaviors of animals.</div>
             </div>
         </div>
     </div>
