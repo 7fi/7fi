@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
-    <link href='https://css.gg/moon.css' rel='stylesheet'>
-    <link href='https://css.gg/sync.css' rel='stylesheet'>
-    <link href='https://css.gg/sun.css' rel='stylesheet'>
-    <link href='https://css.gg/trash.css' rel='stylesheet'>
-    <link href='https://css.gg/dice-5.css' rel='stylesheet'>
-    <title>7dev Portfolio</title>
-</head>
-<body onload="load()">
-    <div id="window">
-        <div id="header">
-            <a id="title" href="/index.html">Carter Anderson</a>
-            <div class="placeholder"></div>
-            <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
-            <a href="/portfolio/" class="headerButton">Portfolio</a>
-            <a href="/about/" class="headerButton">About</a>
-        </div>
-        <div id="content">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/main.css">
+        <link href='https://css.gg/moon.css' rel='stylesheet'>
+        <link href='https://css.gg/sync.css' rel='stylesheet'>
+        <link href='https://css.gg/sun.css' rel='stylesheet'>
+        <link href='https://css.gg/trash.css' rel='stylesheet'>
+        <link href='https://css.gg/dice-5.css' rel='stylesheet'>
+        <title>7dev Portfolio</title>
+    </head>
+    <body onload="load()">
+        <div id="window">
+            <div id="header">
+                <a id="title" href="/index.html">Carter Anderson</a>
+                <div class="placeholder"></div>
+                <a href="/portfolio/" class="headerButton">Portfolio</a>
+                <a href="/about/" class="headerButton">About</a>
+                <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
+            </div>
+            <div id="content">
+            <div class="project"style="background-image: url('/images/Boids1.png');">
+                <div class="projectHeader">
+                    <div class="projectTitle">Flocking Simulation</div>
+                    <div class="projectType">School</div>
+                </div>
+                <div class="projectBody">A school project that simulates the basic flocking behaviors of animals.</div>
+            </div>
+            <div class="project" style="background-image: url('/images/Tasks1.png');">
+                <a class="projectHeader" href="http://tasks-4915.herokuapp.com/">
+                    <div class="projectTitle">Tasks</div>
+                    <div class="projectType">Hobby / Robotics</div>
+                </a>
+                <div class="projectBody">A project to organize tasks for robotics team</div>
+            </div>
+            <div class="project" style="background-image: url('/images/Pairs1.png');">
+                <a class="projectHeader" href="https://bhspairs.cf">
+                    <div class="projectTitle">Sailing Pairs</div>
+                    <div class="projectType">Hobby</div>
+                </a>
+                <div class="projectBody">A project to create pairings for my sailing team's double handed boats.</div>
+            </div>
             <div class="project">
                     <div class="projectHeader">
                     <div class="projectTitle">LED Strip</div>
@@ -40,7 +61,7 @@
                 </div>
             </div>
             <div class="project" style="background-image: url('/images/Factory1.png');">
-                    <div class="projectHeader">
+                <div class="projectHeader">
                     <div class="projectTitle">Factory</div>
                     <div class="projectType">Game Environment</div>
                 </div>
@@ -55,12 +76,12 @@
                     <p>A commisioned project for an unreleased online game. Set in an old mining town in the far reaches of alaska, this map has well balanced gameplay and a high level of detail. A collaboration with fellow artist Octodoodle, it features many unique areas including a mineshaft, sawmill, sleeping quarters, and many buildings throughout the town. The project is well optimized, and required many skills to create such as terrain creation, modelling, texturing, and general knowledge of level design and environment art.</p>
                 </div>
             </div>
-            <div class="project">
+            <div class="project" style="background-image: url('/images/Deep1.png');">
                 <div class="projectHeader">
                     <div class="projectTitle">Deep</div>
                     <div class="projectType">Game Environment</div>
                 </div>
-                <div class="projectBody">A commisioned project for an online game.</div>
+                <div class="projectBody">A project for an online game.</div>
             </div>
             <div class="project" style="background-image: url('/images/Spacesim1.png'); background-position:top;">
                 <div class="projectHeader">
@@ -72,20 +93,6 @@
                     <p>A project for an online game.</p>
                     <p>A project for an online game.</p>
                 </div>
-            </div>
-            <div class="project">
-                <div class="projectHeader">
-                    <div class="projectTitle">Tasks</div>
-                    <div class="projectType">Hobby / Robotics</div>
-                </div>
-                <div class="projectBody">A project to organize tasks for robotics team</div>
-            </div>
-            <div class="project"style="background-image: url('/images/Boids1.png');">
-                <div class="projectHeader">
-                    <div class="projectTitle">Flocking Simulation</div>
-                    <div class="projectType">School</div>
-                </div>
-                <div class="projectBody">A school project that simulates the basic flocking behaviors of animals.</div>
             </div>
         </div>
     </div>
