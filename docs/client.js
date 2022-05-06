@@ -24,7 +24,7 @@ function switchMode(){
         document.documentElement.style.setProperty('--light','#b3b3b3');
         document.documentElement.style.setProperty('--veryLight','#222');
         document.documentElement.style.setProperty('--highlight','#000');
-        document.documentElement.style.setProperty('--highlight1','#12A5B1');
+        document.documentElement.style.setProperty('--highlight1','#ddd');
     }else{
         modeToggle.children[0].classList.replace('gg-moon','gg-sun');
         document.documentElement.style.setProperty('--dark','#333');

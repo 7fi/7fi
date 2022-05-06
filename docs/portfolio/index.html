@@ -1,101 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/main.css">
-        <link href='https://css.gg/moon.css' rel='stylesheet'>
-        <link href='https://css.gg/sync.css' rel='stylesheet'>
-        <link href='https://css.gg/sun.css' rel='stylesheet'>
-        <link href='https://css.gg/trash.css' rel='stylesheet'>
-        <link href='https://css.gg/dice-5.css' rel='stylesheet'>
-        <title>7dev Portfolio</title>
-    </head>
-    <body onload="load()">
-        <div id="window">
-            <div id="header">
-                <a id="title" href="/index.html">Carter Anderson</a>
-                <div class="placeholder"></div>
-                <a href="/portfolio/" class="headerButton">Portfolio</a>
-                <a href="/about/" class="headerButton">About</a>
-                <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link href='https://css.gg/moon.css' rel='stylesheet'>
+    <link href='https://css.gg/sun.css' rel='stylesheet'>
+    <title>Carter's Portfolio</title>
+</head>
+<body onload="load()">
+    <div id="window">
+        <div id="header">
+            <a id="title" href="/index.html">Carter Anderson</a>
+            <div class="placeholder"></div>
+            <a href="/portfolio/" class="headerButton">Portfolio</a>
+            <a href="/about/" class="headerButton">About</a>
+            <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
+        </div>
+        <div id="content">
+        <div class="project"style="background-image: url('/images/Boids1.png');">
+            <div class="projectHeader">
+                <div class="projectTitle">Flocking Simulation</div>
+                <div class="projectType">School | Java</div>
             </div>
-            <div id="content">
-            <div class="project"style="background-image: url('/images/Boids1.png');">
+            <div class="projectBody">A school project that simulates the basic flocking behaviors of animals. Includes custom triangle renderer, custom vector math class, and Craig Reynold's flocking algorithm.</div>
+        </div>
+        <div class="project" style="background-image: url('/images/Tasks1.png'); background-position:top;">
+            <a class="projectHeader" href="http://tasks-4915.herokuapp.com/" target="blank">
+                <div class="projectTitle">Tasks</div>
+                <div class="projectType">Hobby / Robotics | HTML CSS JS</div>
+            </a>
+            <div class="projectBody">A project to help organize tasks for my robotics team. </div>
+        </div>
+        <div class="project" style="background-image: url('/images/Pairs1.png'); background-position:top;">
+            <a class="projectHeader" href="http://bhspairs.cf" target="blank">
+                <div class="projectTitle">Sailing Pairs</div>
+                <div class="projectType">Hobby | HTML CSS JS</div>
+            </a>
+            <div class="projectBody">A project to create pairings for my sailing team's double handed boats.</div>
+        </div>
+        <div class="project">
                 <div class="projectHeader">
-                    <div class="projectTitle">Flocking Simulation</div>
-                    <div class="projectType">School</div>
-                </div>
-                <div class="projectBody">A school project that simulates the basic flocking behaviors of animals.</div>
+                <div class="projectTitle">LED Strip</div>
+                <div class="projectType">Hobby / Robotics | C++ Python</div>
             </div>
-            <div class="project" style="background-image: url('/images/Tasks1.png');">
-                <a class="projectHeader" href="http://tasks-4915.herokuapp.com/">
-                    <div class="projectTitle">Tasks</div>
-                    <div class="projectType">Hobby / Robotics</div>
-                </a>
-                <div class="projectBody">A project to organize tasks for robotics team</div>
+            <div class="projectBody">A project to control led light strips. Works via web connection as well as a version with an IR remote control.</div>
+        </div>
+        <div class="project" style="background-image: url('/images/Jailbird1.png');">
+            <a class="projectHeader" href="https://krunker.io/?play=Jailbird">
+                <div class="projectTitle">Jailbird</div>
+                <div class="projectType" >Game | Krunker Editor</div>
+            </a>
+            <div class="projectBody">
+                <p>A project for a $50,000 Game Development competition. Set in a dystopian future, you must escape the prison via car, mech and boat to the countryside. Made with the Krunker Editor and runs on browser.</p>
+                <p>Placed 7th.</p>
             </div>
-            <div class="project" style="background-image: url('/images/Pairs1.png');">
-                <a class="projectHeader" href="https://bhspairs.cf">
-                    <div class="projectTitle">Sailing Pairs</div>
-                    <div class="projectType">Hobby</div>
-                </a>
-                <div class="projectBody">A project to create pairings for my sailing team's double handed boats.</div>
+        </div>
+        <div class="project" style="background-image: url('/images/Factory1.png');">
+            <div class="projectHeader">
+                <div class="projectTitle">Factory</div>
+                <div class="projectType">Game Environment | Blender</div>
             </div>
-            <div class="project">
-                    <div class="projectHeader">
-                    <div class="projectTitle">LED Strip</div>
-                    <div class="projectType">Hobby / Robotics</div>
-                </div>
-                <div class="projectBody">A project to control led light strips. Works via web connection as well as a version with an IR remote control.</div>
+            <div class="projectBody">A commisioned project for an unreleased online game. Set in a factory, this project was a great way to gain experience with working on a team, as well as doing commisioned work. </div>
+        </div>
+        <div class="project" style="background-image: url('/images/Ravine1.png');">
+            <div class="projectHeader">
+                <div class="projectTitle">Ravine</div>
+                <div class="projectType">Game Environment | Blender</div>
             </div>
-            <div class="project" style="background-image: url('/images/Jailbird1.png');">
-                <div class="projectHeader">
-                    <div class="projectTitle">Jailbird</div>
-                    <a class="projectType" href="https://krunker.io/?play=Jailbird">Game</a>
-                </div>
-                <div class="projectBody">
-                    <p>A project for a $50,000 Game Development competition. Set in a dystopian future, you must escape the prison via car, mech and boat to the countryside. Made with the Krunker Editor and runs on browser.</p>
-                    <p>Placed 7th.</p>
-                </div>
+            <div class="projectBody">
+                <p>A commisioned project for an unreleased online game. Set in an old mining town in the far reaches of alaska, this map has well balanced gameplay and a high level of detail. A collaboration with fellow artist Octodoodle, it features many unique areas including a mineshaft, sawmill, sleeping quarters, and many buildings throughout the town. The project is well optimized, and required many skills to create such as terrain creation, modelling, texturing, and general knowledge of level design and environment art.</p>
             </div>
-            <div class="project" style="background-image: url('/images/Factory1.png');">
-                <div class="projectHeader">
-                    <div class="projectTitle">Factory</div>
-                    <div class="projectType">Game Environment</div>
-                </div>
-                <div class="projectBody">A commisioned project for an unreleased online game. Set in a factory, this project was a great way to gain experience with working on a team, as well as doing commisioned work. </div>
+        </div>
+        <div class="project" style="background-image: url('/images/Deep1.png');">
+            <div class="projectHeader">
+                <div class="projectTitle">Deep</div>
+                <div class="projectType">Game Environment | Krunker Editor</div>
             </div>
-            <div class="project" style="background-image: url('/images/Ravine1.png');">
-                <div class="projectHeader">
-                    <div class="projectTitle">Ravine</div>
-                    <div class="projectType">Game Environment</div>
-                </div>
-                <div class="projectBody">
-                    <p>A commisioned project for an unreleased online game. Set in an old mining town in the far reaches of alaska, this map has well balanced gameplay and a high level of detail. A collaboration with fellow artist Octodoodle, it features many unique areas including a mineshaft, sawmill, sleeping quarters, and many buildings throughout the town. The project is well optimized, and required many skills to create such as terrain creation, modelling, texturing, and general knowledge of level design and environment art.</p>
-                </div>
+            <div class="projectBody">Set in a secret research facility in the depths of the ocean, this map was unique in its asthetic as well as its level design. It played with verticality in a way not exectued in previous maps for this game.</div>
+        </div>
+        <div class="project" style="background-image: url('/images/Spacesim1.png'); background-position:top;">
+            <div class="projectHeader">
+                <div class="projectTitle">Space Sim (Unfinished)</div>
+                <div class="projectType">Game | Krunker Editor</div>
             </div>
-            <div class="project" style="background-image: url('/images/Deep1.png');">
-                <div class="projectHeader">
-                    <div class="projectTitle">Deep</div>
-                    <div class="projectType">Game Environment</div>
-                </div>
-                <div class="projectBody">A project for an online game.</div>
-            </div>
-            <div class="project" style="background-image: url('/images/Spacesim1.png'); background-position:top;">
-                <div class="projectHeader">
-                    <div class="projectTitle">Space Sim (Unfinished)</div>
-                    <div class="projectType">Game</div>
-                </div>
-                <div class="projectBody">
-                    <p>A project for an online game.</p>
-                    <p>A project for an online game.</p>
-                    <p>A project for an online game.</p>
-                </div>
+            <div class="projectBody">
+                <p>An unfinished collaboration which was planned to span many worlds and push the limits of browser games. Even though it was never finished, much work was still put into it, including modelling and texturing several spacecraft, as well as making a few planets with custom terrain and assets. We developed a chunk system to help with performance, as well as many menus and interactions from scratch.  </p>
             </div>
         </div>
     </div>
-    <script src="/client.js"></script>
+<script src="/client.js"></script>
 </body>
 </html>
