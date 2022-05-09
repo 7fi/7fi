@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 /* Dark mode */
 :root{
     --highlight:#fff;
@@ -22,7 +23,7 @@
 } */
 
 body{
-    font-family: 'Fira sans', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 button{
     appearance: none;
@@ -46,7 +47,6 @@ a:active { text-decoration: none; }
     grid-template-areas: "header" "content";
     grid-template-columns: 1fr;
     grid-template-rows: 8% auto;
-    gap: 20px;
     background-color: var(--medDark);
     overflow-x:hidden;
 }
@@ -55,6 +55,7 @@ a:active { text-decoration: none; }
     grid-area: header;
     display: flex;
     flex-direction: row;
+    z-index: 1;
 }
 #title{
     /* width: 100%; */
@@ -67,19 +68,20 @@ a:active { text-decoration: none; }
     text-align: center;
 }
 #modeToggle{
-    background-color: var(--med);
+    /* background-color: var(--med); */
     border-radius: 5px;
     width: 33px;
     height: 33px;
     padding: 5px;
     margin: 22px 0px;
+    color: var(--highlight);
 }
 .headerButton{
     /* background-color: var(--med); */
     /* border-radius: 5px; */
     height: 28px;
     padding: 10px 0px;
-    margin: 22px 7px;
+    margin: 17px 7px;
     color: var(--highlight)!important;
     font-weight: 600;
 }
@@ -91,6 +93,10 @@ a:active { text-decoration: none; }
     grid-area: content;
     display: flex;
     flex-direction: column;
+}
+#content2{
+    grid-area: content;
+    display: grid;
 }
 .project{
     margin: 10px;
@@ -146,7 +152,24 @@ a:active { text-decoration: none; }
     background-color: var(--dark);
     border-radius: 10px;
     padding: 15px;
+    max-width: 1000px;
+    place-self: center;
+    top: 9%;
+    position: absolute;
 }
 #bioTitle{
     color:var(--highlight)
+}
+.heroImg{
+    background-image: url('/images/Ravine1.png');
+    background-position: center;
+    display: grid;
+    place-content: center;
+    height: 600px;
+    text-align: center;
+    color: #fff !important;;
+    text-shadow: #000000cc 5px 5px 5px;
+}
+.heroText{
+    font-size: 4em; 
 }
