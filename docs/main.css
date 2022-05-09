@@ -117,7 +117,7 @@ a:active { text-decoration: none; }
 .projectTitle{
     font-weight: 700;
     font-size: 1.5em;
-    color:var(--highlight)
+    color:#fff;
 }
 .projectBody{
     color:var(--highlight1);
@@ -133,7 +133,7 @@ a:active { text-decoration: none; }
 }
 .projectType{
     margin: 10px;
-    color: var(--veryLight);
+    color: #fff;
     font-weight: 600;
 }
 .projectHeader{
