@@ -162,7 +162,7 @@ a:active { text-decoration: none; }
 #bioTitle{
     color:var(--highlight)
 }
-.heroImg{
+#heroImg{
     background-image: url('/images/Ravine1.png');
     background-position: center;
     display: grid;

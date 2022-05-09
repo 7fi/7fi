@@ -1,5 +1,7 @@
 const modeToggle = document.getElementById('modeToggle');
+const heroImg = document.getElementById('heroImg');
 let lightMode = false;
+let pics = ['/images/Deep1.png', '/images/Factory1.png', '/images/Jailbird1.png', '/images/Ravine1.png', '/images/Spacesim1.png']
 
 function load(){
     let myBool = (decodeURIComponent(document.cookie).split('=')[1] === 'true');
@@ -7,6 +9,10 @@ function load(){
     if(myBool != lightMode){
         switchMode();
     }
+    let random = Math.round(Math.random() * (pics.length - 1));
+    console.log(random)
+    heroImg.style.backgroundImage = 'url(' + pics[random] + ')';
+    console.log(heroImg.style.backgroundImage);
 }
 
 // Toggle between light and dark mode
