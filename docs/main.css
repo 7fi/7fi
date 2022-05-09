@@ -37,6 +37,7 @@ a:visited { text-decoration: none; color:var(--highlight);}
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
+
 #window{
     position:absolute;
     top:0;
@@ -55,6 +56,7 @@ a:active { text-decoration: none; }
     grid-area: header;
     display: flex;
     flex-direction: row;
+    align-items: center;
     z-index: 1;
 }
 #title{
@@ -73,7 +75,7 @@ a:active { text-decoration: none; }
     width: 33px;
     height: 33px;
     padding: 5px;
-    margin: 22px 0px;
+    /* margin: 22px 0px; */
     color: var(--highlight);
 }
 .headerButton{
@@ -81,7 +83,7 @@ a:active { text-decoration: none; }
     /* border-radius: 5px; */
     height: 28px;
     padding: 10px 0px;
-    margin: 17px 7px;
+    margin: 0px 7px;
     color: var(--highlight)!important;
     font-weight: 600;
 }
@@ -172,4 +174,14 @@ a:active { text-decoration: none; }
 }
 .heroText{
     font-size: 4em; 
+}
+#contactBox{
+    background-color: var(--med);
+    border-radius: 5px;
+    min-width: 600px;
+    max-width: 1000px;
+    padding: 10px;
+    place-self: center;
+    top:9%;
+    position: absolute;
 }
