@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link href='https://css.gg/moon.css' rel='stylesheet'>
-    <link href='https://css.gg/sun.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://css.gg/moon.css" rel="stylesheet" />
+    <link href="https://css.gg/sun.css" rel="stylesheet" />
     <title>Carter Anderson</title>
-</head>
-<body onload="load()">
+  </head>
+  <body onload="load()">
     <div id="window">
-        <div id="header">
-            <a id="title" href="/">Carter Anderson</a>
-            <div class="placeholder"></div>
-            <a href="/about/" class="headerButton">About</a>
-            <a href="/portfolio/" class="headerButton">Portfolio</a>
-            <a href="/contact/" class="headerButton">Contact</a>
-            <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
+      <div id="header">
+        <a id="title" href="/">Carter Anderson</a>
+        <div class="placeholder"></div>
+        <a href="/about/" class="headerButton">About</a>
+        <a href="/portfolio/" class="headerButton">Portfolio</a>
+        <a href="/contact/" class="headerButton">Contact</a>
+        <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
+      </div>
+      <div id="content">
+        <div id="heroImg">
+          <div class="heroCenter">
+            <div class="heroPreface">Meet:</div>
+            <a href="/about/" class="heroText"><p style="color: #fff; margin: inherit">Carter Anderson</p></a>
+            <h3 class="heroSubtitle">Developer</h3>
+          </div>
         </div>
-        <div id="content">
-            <div id="heroImg">
-                <div class="heroCenter">
-                    <div class="heroPreface">Meet:</div>
-                    <a href="/about/" class="heroText"><p style="color:#fff; margin:inherit;">Carter Anderson</p></a>
-                    <h3 class="heroSubtitle">Developer</h3>
-                </div>
-            </div>
+        <div style="width: 100%; text-align: center">
+          <span>
+            <!-- <a href="https://carteranderson.dev" target="_blank">carteranderson.dev</a> -->
+            <a href="https://www.bhspairs.cf" target="_blank">bhspairs</a>
+            <a href="https://7fi.github.io/boids-js" target="_blank">boids-js</a>
+            <a href="https://7fi.github.io/music-timer" target="_blank">music-timer</a>
+            <a href="https://tasks-4915.herokuapp.com/" target="_blank">tasks-4915</a>
+          </span>
         </div>
+      </div>
     </div>
-    <a href="lights.html" style="position: absolute; bottom:0; right:0; color:var(--dark)">L</a>
+    <a href="lights.html" style="position: absolute; bottom: 0; right: 0; color: var(--dark)">L</a>
     <script src="client.js"></script>
-</body>
+  </body>
 </html>
