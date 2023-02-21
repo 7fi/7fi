@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --highlight: #000;
+  --bg: #fff;
+  --component-bg: #eaeaea;
+  --border: #d1d1d1;
+  --highlight1: #12a5b1;
+  --highlight2: #203960;
+  --text: #000;
+  --danger: #f00;
+  --sucess: #3ee13e;
+
+  --radius: 7px;
+  --font: 'Roboto';
+}
+/* Dark mode */
+[data-theme='dark'] {
+  --highlight: #eaeaea;
+  --bg: #171717;
+  --component-bg: #202020;
+  --border: #363636;
+  --highlight1: #222;
+  --highlight2: #222;
+  --text: #eee;
+}
+[data-theme='red'] {
+  --highlight: #eaeaea;
+  --bg: #801010;
+  --component-bg: #ba1717;
+  --border: #ff3a3a;
+  --highlight1: #222;
+  --highlight2: #222;
+  --text: #000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 75px;
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--bg);
+  color: var(--text);
+}
+main {
+  padding: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+input {
+  border: var(--border) 0.2rem solid;
+  border-radius: var(--radius);
+  background-color: transparent;
+  padding: 0.2rem;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+button:hover {
+  background-color: var(--border);
+}
+
+button:disabled {
+  color: var(--text);
+  /* border-color: var(--border); */
+}
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--component-bg);
+  border-bottom: 0.2rem solid var(--border);
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0 1rem 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.navRight li {
+  margin: 0.2rem;
+}
+
+/* Text */
+.text-danger {
+  color: var(--danger);
+  font-weight: 700;
+}
+.text-sucess {
+  color: var(--sucess);
+  font-weight: 700;
+}
+.text-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.text-subtitle {
+  font-size: 1.2rem;
+  /* font-weight: ; */
+  color: var(--highlight1);
+}
+.text-titlecase {
+  text-transform: capitalize;
+}
+.text-bg {
+  position: absolute;
+  display: inline;
+}
