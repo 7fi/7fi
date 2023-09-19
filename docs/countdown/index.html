@@ -4,39 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown!</title>
-    <link rel="stylesheet" href="./countdown.css" />
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="./countdown.css" />
   </head>
   <body>
-    <div class="content">
-      <div id="header">
-        <a id="title" href="/">Carter Anderson</a>
-        <div class="placeholder"></div>
-        <a href="/about/" class="headerButton">About</a>
-        <a href="/portfolio/" class="headerButton" style="text-shadow: #000000aa 3px 3px 3px">Portfolio</a>
-        <a href="/contact/" class="headerButton">Contact</a>
-        <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
-      </div>
-      <div class="countdown">
-        <div class="numbers">
-          <div class="textContainer">
-            <h2 id="dayNum"></h2>
-            <h3>Days</h3>
-          </div>
-          <div class="textContainer">
-            <h2 id="hourNum"></h2>
-            <h3>Hours</h3>
-          </div>
-          <div class="textContainer">
-            <h2 id="minNum"></h2>
-            <h3>Minutes</h3>
-          </div>
-          <div class="textContainer">
-            <h2 id="secNum"></h2>
-            <h3>Seconds</h3>
-          </div>
+    <div id="window">
+      <div class="content">
+        <div id="header">
+          <a id="title" href="/">Carter Anderson</a>
+          <div class="placeholder"></div>
+          <a href="/about/" class="headerButton">About</a>
+          <a href="/portfolio/" class="headerButton">Portfolio</a>
+          <a href="/contact/" class="headerButton">Contact</a>
+          <button id="modeToggle" title="Toggle Dark Mode" type="button"><i class="gg-sun"></i></button>
         </div>
-        <!-- <h1>Until we are together!</h1> -->
+        <div class="countdown">
+          <div id="progressBar"></div>
+          <div class="numbers">
+            <div class="textContainer">
+              <h2 id="dayNum"></h2>
+              <h3>Days</h3>
+            </div>
+            <div class="textContainer">
+              <h2 id="hourNum"></h2>
+              <h3>Hours</h3>
+            </div>
+            <div class="textContainer">
+              <h2 id="minNum"></h2>
+              <h3>Minutes</h3>
+            </div>
+            <div class="textContainer">
+              <h2 id="secNum"></h2>
+              <h3>Seconds</h3>
+            </div>
+          </div>
+          <h3 id="percentNum"></h3>
+          <h1>Until we are together!</h1>
+        </div>
       </div>
     </div>
   </body>
