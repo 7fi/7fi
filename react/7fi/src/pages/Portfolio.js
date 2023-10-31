@@ -1,5 +1,6 @@
 import Project from '../components/Project'
 import Boids1 from '../images/Boids1.png'
+
 export default function Portfolio({}) {
   return (
     <main>
