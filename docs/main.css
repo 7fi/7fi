@@ -34,6 +34,7 @@ button {
 
 a:link {
   text-decoration: none;
+  color: var(--highlight);
 }
 a:visited {
   text-decoration: none;
@@ -186,7 +187,6 @@ a:active {
   margin: 5px;
   padding: 20px;
   overflow: hidden;
-  background-color: #333333;
 }
 #heroImg {
   background-image: url('/images/Ravine1.png');

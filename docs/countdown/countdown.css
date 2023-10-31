@@ -31,7 +31,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 4;
 }
 #progressBar {
   background-color: #bde7d8;
@@ -40,6 +40,8 @@
   height: 100%;
   position: absolute;
   margin: -15px;
+  /* z-index: /; */
+  border-radius: 10px;
 }
 .textContainer {
   display: flex;
