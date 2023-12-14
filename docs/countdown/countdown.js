@@ -7,7 +7,7 @@ const perNum = document.getElementById('percentNum')
 const countdown = (date) => {
   // const countDate = new Date('November 22, 2023 13:45:00').getTime()
   // const startDate = new Date('August 22, 2023 8:20:00').getTime()
-  const countDate = new Date('December 24, 2023 12:00:00').getTime()
+  const countDate = new Date('December 22, 2023 14:30:00').getTime()
   const startDate = new Date('November 26, 2023 8:45:00').getTime()
   const now = new Date().getTime()
   const gap = countDate - now
