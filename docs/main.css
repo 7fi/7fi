@@ -101,7 +101,7 @@ a:active {
 }
 
 #content {
-  grid-area: content;
+  /* grid-area: content; */
   display: flex;
   flex-direction: column;
 }
