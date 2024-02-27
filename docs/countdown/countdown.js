@@ -8,7 +8,7 @@ const countdowns = document.getElementById('countdowns')
 
 let titleSet = false
 
-const countdown = (date) => {
+const countdown = (end, start) => {
   const holder = document.createElement('div')
   holder.classList.add('countdown')
 
@@ -75,8 +75,9 @@ const countdown = (date) => {
   // const countDate = new Date('February 16, 2024 8:00:00').getTime()
   // const startDate = new Date('January 7, 2024 8:15:00').getTime()
   // const countDate = new Date('March 30, 2024 12:00:00').getTime()
-  const startDate = new Date('February 19, 2024 11:30').getTime()
-  const countDate = date
+  // const startDate = new Date('February 19, 2024 11:30').getTime()
+  const startDate = start
+  const countDate = end
   const now = new Date().getTime()
   const gap = countDate - now
   const soFar = now - startDate
@@ -114,8 +115,9 @@ const updateCountdown = () => {
   }
   titleSet = false
 
-  countdown(new Date('March 30, 2024 12:00:00').getTime())
-  countdown(new Date('June 16, 2024 12:00:00').getTime())
+  countdown(new Date('March 30, 2024 12:00:00').getTime(), new Date('February 19, 2024 11:30').getTime())
+  countdown(new Date('May 22, 2024 12:00:00').getTime(), new Date('February 19, 2024 11:30').getTime())
+  countdown(new Date('June 16, 2024 12:00:00').getTime(), new Date('August 22, 2023 08:20').getTime())
 }
 
 setInterval(updateCountdown, 1000)
