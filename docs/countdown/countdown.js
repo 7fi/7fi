@@ -115,7 +115,7 @@ const updateCountdown = () => {
   }
   titleSet = false
 
-  countdown(new Date('May 22, 2024 12:00:00').getTime(), new Date('February 19, 2024 11:30').getTime())
+  countdown(new Date('May 22, 2024 12:00:00').getTime(), new Date('March 22, 2024 3:30').getTime())
   countdown(new Date('June 16, 2024 12:00:00').getTime(), new Date('August 22, 2023 08:20').getTime())
 }
 
