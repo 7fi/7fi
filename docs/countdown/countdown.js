@@ -18,6 +18,15 @@ const countdown = (end, start) => {
   const numberHolder = document.createElement('div')
   numberHolder.classList.add('numbers')
 
+  const weekHolder = document.createElement('div')
+  weekHolder.classList.add('textContainer')
+  const weekNum = document.createElement('h2')
+  weekNum.id = 'weekNum'
+  const weekText = document.createElement('h3')
+  weekText.textContent = 'Weeks'
+  weekHolder.appendChild(weekNum)
+  weekHolder.appendChild(weekText)
+
   const dayHolder = document.createElement('div')
   dayHolder.classList.add('textContainer')
   const dayNum = document.createElement('h2')
@@ -57,6 +66,7 @@ const countdown = (end, start) => {
   const percNum = document.createElement('h3')
   percNum.id = 'percentNum'
 
+  numberHolder.appendChild(weekHolder)
   numberHolder.appendChild(dayHolder)
   numberHolder.appendChild(hourHolder)
   numberHolder.appendChild(minHolder)
@@ -91,6 +101,8 @@ const countdown = (end, start) => {
   const hour = minute * 60
   const day = hour * 24
 
+  const week = gap / day / 7
+  const textWeek = ('' + week).slice(0, 3)
   const textDay = Math.floor(gap / day)
   const textHour = Math.floor((gap % day) / hour)
   const textMinute = Math.floor((gap % hour) / minute)
@@ -98,6 +110,7 @@ const countdown = (end, start) => {
 
   // return {day: textDay, h}
 
+  weekNum.innerText = textWeek
   dayNum.innerText = textDay
   hourNum.innerText = textHour
   minNum.innerText = textMinute
@@ -115,7 +128,7 @@ const updateCountdown = () => {
   }
   titleSet = false
 
-  countdown(new Date('May 24, 2024 12:00:00').getTime(), new Date('March 22, 2024 1:45').getTime())
+  countdown(new Date('May 26, 2024 12:00:00').getTime(), new Date('March 22, 2024 1:45').getTime())
   countdown(new Date('June 11, 2024 12:00:00').getTime(), new Date('August 22, 2023 08:20').getTime())
 }
 
