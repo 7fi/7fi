@@ -18,6 +18,15 @@ const countdown = (end, start) => {
   const numberHolder = document.createElement('div')
   numberHolder.classList.add('numbers')
 
+  const mealHolder = document.createElement('div')
+  mealHolder.classList.add('textContainer')
+  const mealNum = document.createElement('h2')
+  mealNum.id = 'mealNum'
+  const mealText = document.createElement('h3')
+  mealText.textContent = 'Meals'
+  mealHolder.appendChild(mealNum)
+  mealHolder.appendChild(mealText)
+
   const weekHolder = document.createElement('div')
   weekHolder.classList.add('textContainer')
   const weekNum = document.createElement('h2')
@@ -66,6 +75,7 @@ const countdown = (end, start) => {
   const percNum = document.createElement('h3')
   percNum.id = 'percentNum'
 
+  numberHolder.appendChild(mealHolder)
   numberHolder.appendChild(weekHolder)
   numberHolder.appendChild(dayHolder)
   numberHolder.appendChild(hourHolder)
@@ -101,6 +111,7 @@ const countdown = (end, start) => {
   const hour = minute * 60
   const day = hour * 24
 
+  const meals = Math.ceil((gap / day) * 2)
   const week = gap / day / 7
   const textWeek = ('' + week).slice(0, 3)
   const textDay = Math.floor(gap / day)
@@ -110,6 +121,7 @@ const countdown = (end, start) => {
 
   // return {day: textDay, h}
 
+  mealNum.innerText = meals
   weekNum.innerText = textWeek
   dayNum.innerText = textDay
   hourNum.innerText = textHour
@@ -128,7 +140,7 @@ const updateCountdown = () => {
   }
   titleSet = false
 
-  countdown(new Date('May 23, 2024 12:00:00').getTime(), new Date('March 22, 2024 1:45').getTime())
+  countdown(new Date('May 24, 2024 21:00:00').getTime(), new Date('March 22, 2024 1:45').getTime())
   countdown(new Date('June 11, 2024 12:00:00').getTime(), new Date('August 22, 2023 08:20').getTime())
 }
 
