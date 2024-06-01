@@ -140,8 +140,8 @@ const updateCountdown = () => {
   }
   titleSet = false
 
-  countdown(new Date('May 24, 2024 21:00:00').getTime(), new Date('March 22, 2024 1:45').getTime())
-  countdown(new Date('June 11, 2024 12:00:00').getTime(), new Date('August 22, 2023 08:20').getTime())
+  // countdown(new Date('May 24, 2024 21:00:00').getTime(), new Date('March 22, 2024 1:45').getTime())
+  countdown(new Date('June 12, 2024 09:00:00').getTime(), new Date('August 22, 2023 08:20').getTime())
 }
 
 setInterval(updateCountdown, 1000)
