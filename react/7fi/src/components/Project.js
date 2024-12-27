@@ -1,16 +1,14 @@
 import { Link } from 'react-router-dom'
 
-export default function Project({ projName, projLink, projType, projEnv, projDesc, projPic }) {
+export default function Project({ projName, projLink, projType, projEnv, projDesc, projPic, projPicPos }) {
   return (
-    <div>
-      <div className='project'>
-        <img src={require(projPic)} />
-        <Link to={projLink} className='projectHeader'>
-          <span>{projName}</span>
-          <span>{projType}</span>
-        </Link>
-        <div>{projDesc}</div>
-      </div>
+    <div className='project' style={{ backgroundImage: `url(${projPic})`, backgroundPosition: `${projPicPos}` }}>
+      {/* <img className='projPic' src={projPic} /> */}
+      <Link to={projLink} className='projectHeader'>
+        <span className='projectTitle'>{projName}</span>
+        <span className='projectType'>{projType}</span>
+      </Link>
+      <div className='projectBody'>{projDesc}</div>
     </div>
   )
   /* <div class="project"style="background-image: url('/images/Boids1.png');">

@@ -1,0 +1,17 @@
+.bigBox {
+  position: absolute;
+  /* width: 100%; */
+  height: 150%;
+  overflow-x: scroll;
+  left: 0;
+  right: 0;
+  padding: 50px;
+  margin-top: 82px;
+  background-color: #ccc;
+}
+.freePage {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+}
