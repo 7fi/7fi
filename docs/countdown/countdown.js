@@ -142,8 +142,9 @@ const updateCountdown = () => {
 
   // countdown(new Date('May 24, 2024 21:00:00').getTime(), new Date('March 22, 2024 1:45').getTime())
   // countdown(new Date('June 12, 2024 09:00:00').getTime(), new Date('August 22, 2023 08:20').getTime())
-  countdown(new Date('April 27, 2025 09:00:00').getTime(), new Date('January 6, 2025 9:00').getTime())
-  countdown(new Date('May 21, 2025 09:00:00').getTime(), new Date('February 3, 2025 9:00').getTime())
+  // countdown(new Date('April 27, 2025 09:00:00').getTime(), new Date('January 6, 2025 9:00').getTime())
+  // countdown(new Date('May 21, 2025 09:00:00').getTime(), new Date('February 3, 2025 9:00').getTime())
+  countdown(new Date('August 24, 2025 18:00:00').getTime(), new Date('May 26, 2025 06:45:00').getTime())
 }
 
 setInterval(updateCountdown, 1000)
