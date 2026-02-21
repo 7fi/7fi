@@ -3,7 +3,9 @@
 
   --text-1: #fff;
   --text-2: #c1c1c1;
-  --text-link: #c3e0ff;
+  --text-3: #ffd119;
+  --text-link: var(--text-3); /* #c3e0ff */
+  --text-link-hover: #a88a12; /*#71a0f3 */
 
   --radius: 7px;
   --shadow: 0 0 5px 2px #fff;
@@ -35,30 +37,48 @@ body {
 .marginArea {
   margin: auto 25%;
 }
+.marginAreaWider {
+  margin: auto 20%;
+}
+
 .topMarginArea {
   margin-top: 5rem;
 }
 
-.flexRow {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-.preferFlexRow {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
+.flexRow,
+.preferFlexRow,
 .stronglyPreferFlexRow {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
-
-.flexCol {
+.flexCol,
+.preferFlexCol {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.nowrap {
+  text-wrap-mode: nowrap;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--text-link);
+}
+a:hover {
+  /* color: var(--text-link-hover); */
+  filter: brightness(0.7);
+}
+
+.bareLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  margin: 0.5rem 0;
 }
 
 @media (max-width: 850px) {
@@ -66,6 +86,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+  .marginAreaWider {
+    margin: auto 5%;
+  }
+  .preferFlexCol {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (max-width: 600px) {
@@ -81,17 +108,4 @@ body {
   .topMarginArea {
     margin-top: 1rem;
   }
-}
-
-a {
-  text-decoration: underline;
-  color: var(--text-link);
-}
-.bareLink {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1 {
-  margin: 0.5rem 0;
 }

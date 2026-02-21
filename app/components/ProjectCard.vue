@@ -37,11 +37,11 @@ defineProps<{
   padding: 1rem;
   transition: transform 0.125s;
 }
-.card:hover {
+/* .card:hover {
   outline: var(--outline-thick);
   box-shadow: var(--shadow);
   transform: scale(1.01);
-}
+} */
 
 .titleBar {
   display: flex;

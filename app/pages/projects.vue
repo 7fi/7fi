@@ -6,7 +6,7 @@ const { data: projects } = await useAsyncData<Project[]>('projects', () => query
 
 <template>
   <main>
-    <div class="projectsGrid">
+    <div class="projectsGrid marginAreaWider">
       <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
     </div>
   </main>
@@ -14,7 +14,8 @@ const { data: projects } = await useAsyncData<Project[]>('projects', () => query
 
 <style scoped>
 main {
-  margin: 2rem 20%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .projectsGrid {
   display: grid;
