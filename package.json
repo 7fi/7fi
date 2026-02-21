@@ -1,6 +1,20 @@
 {
+  "name": "nuxt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "deploy": "npm run generate && gh-pages -d .output/public"
+  },
   "dependencies": {
-    "react-icons": "^4.7.1",
-    "react-router-dom": "^6.8.1"
+    "@nuxt/content": "^3.11.2",
+    "better-sqlite3": "^12.6.2",
+    "nuxt": "^4.3.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
