@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "deploy": "npm run generate && gh-pages -d .output/public"
+    "deploy": "npm run generate && npx gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@nuxt/content": "^3.11.2",
