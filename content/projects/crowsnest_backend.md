@@ -10,4 +10,5 @@ tech:
 featured: true
 github: https://github.com/7fi/sailing-rating-calculation
 order: 2
+img: /bellingham.jpeg
 ---

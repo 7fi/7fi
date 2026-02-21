@@ -8,6 +8,7 @@ export const projectSchema = z.object({
   url: z.string().optional(),
   github: z.string().optional(),
   order: z.number().optional(),
+  img: z.string().optional(),
 })
 
 export const homeSchema = z.object({
@@ -15,6 +16,7 @@ export const homeSchema = z.object({
   paragraph: z.string(),
   techs: z.array(z.string()),
   langs: z.array(z.string()),
+  learning: z.array(z.string()),
   github: z.string(),
   email: z.string(),
   linkedin: z.string(),

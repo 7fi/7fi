@@ -3,7 +3,7 @@
 
   --text-1: #fff;
   --text-2: #c1c1c1;
-  --text-3: #ffd119;
+  --text-3: #c3e0ff; /* #ffd119*/
   --text-link: var(--text-3); /* #c3e0ff */
   --text-link-hover: #a88a12; /*#71a0f3 */
 
@@ -52,6 +52,11 @@ body {
   flex-direction: row;
   gap: 1rem;
 }
+
+.flexEven > * {
+  flex: 1;
+}
+
 .flexCol,
 .preferFlexCol {
   display: flex;
@@ -75,6 +80,9 @@ a:hover {
 .bareLink {
   text-decoration: none;
   color: inherit;
+}
+.bareLink:hover {
+  filter: none;
 }
 
 h1 {

@@ -9,5 +9,5 @@ export type Project = z.infer<typeof projectSchema> & {
 export type Home = z.infer<typeof homeSchema> & {
   id: string
   path: string
-  body: unknown
+  body: Record<string, any>
 }

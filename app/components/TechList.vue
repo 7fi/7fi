@@ -7,9 +7,9 @@ defineProps<{
 
 <template>
   <div class="techList">
-    <span>{{ phrase }}: </span>
+    <span class="nowrap">{{ phrase }}: </span>
     <ul>
-      <li v-for="tech in techs">- {{ tech }}</li>
+      <li v-for="tech in techs" class="nowrap">- {{ tech }}</li>
     </ul>
     <!-- <span> {{ techs.join(', ') }}</span> -->
   </div>

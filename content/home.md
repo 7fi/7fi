@@ -1,5 +1,5 @@
 ---
-title: Hi, I'm Carter Anderson!
+title: Carter Anderson
 langs:
   - Python
   - JavaScript
@@ -9,9 +9,12 @@ langs:
   - HTML
 techs:
   - React
-  - Nuxt & Vue
   - Pandas
   - Blender
+learning:
+  - Nuxt & Vue
+  - ASP.NET
+  - ADO pipelines
 
 email: anderson.cart[@]northeastern.edu
 github: https://github.com/7fi
@@ -19,4 +22,4 @@ linkedin: https://www.linkedin.com/in/cawander/
 home: Boston / Seattle
 ---
 
-I like to develop **full stack** solutions to unique problems. I learn quickly and I'm not afraid to try new things. My favorite part of development is seeing people find my creations useful.
+I like to develop **full stack** solutions to solve my problems and bring my ideas to life. I learn quickly and what else?. My favorite part of development is seeing people find my creations useful.

@@ -1,7 +1,25 @@
 <script lang="ts" setup>
 import type { Project } from '~/types/content'
+import { ref, onMounted, onUnmounted, provide, type Ref } from 'vue'
 
 const { data: projects } = await useAsyncData<Project[]>('projects', () => queryCollection('projects').order('order', 'ASC').all(), { default: () => [] })
+
+const scrollY = ref(0)
+
+const handleScroll = () => {
+  scrollY.value = window.scrollY
+}
+
+onMounted(() => {
+  scrollY.value = window.scrollY
+  window.addEventListener('scroll', handleScroll, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+
+provide<Ref<number>>('scrollY', scrollY)
 </script>
 
 <template>
