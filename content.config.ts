@@ -17,6 +17,8 @@ export const homeSchema = z.object({
   langs: z.array(z.string()),
   github: z.string(),
   email: z.string(),
+  linkedin: z.string(),
+  home: z.string(),
 })
 
 export default defineContentConfig({

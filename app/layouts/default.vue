@@ -6,3 +6,8 @@
     </main>
   </div>
 </template>
+<style scoped>
+.page {
+  padding-top: 50px;
+}
+</style>

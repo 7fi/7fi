@@ -8,7 +8,7 @@
 </template>
 <style scoped>
 .navContainer {
-  position: sticky;
+  position: fixed;
   border-bottom: var(--outline);
   background-color: var(--bg-1);
 
